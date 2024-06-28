@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="centered-div">
+      <div class="column" id="one">
+        <span id="heading">
+          <h1>Taxable Income Calculator</h1>
+          <small>Kindly fill in the form below</small>
+          <hr />
+        </span>
+        <form id="myForm">
+          <span>
+            <input
+              type="text"
+              class="borderless-input"
+              id="g1"
+              placeholder="Enter Gross Income 1 [ Ex. 200,000]"
+              required
+            />
+          </span>
+          <span>
+            <input
+              type="text"
+              class="borderless-input"
+              id="g2"
+              placeholder="Enter Gross Income 2[ Ex. 400,000]"
+              required
+            />
+          </span>
+          <span>
+            <input
+              type="text"
+              class="borderless-input"
+              id="p1"
+              placeholder="Enter Percentage for Gross Income 1 [ E.x. 8]"
+              required
+            />
+          </span>
+          <span>
+            <input
+              type="text"
+              class="borderless-input"
+              id="p2"
+              placeholder="Enter Percentage for Gross Income 2 [ E.x. 8]"
+              required
+            />
+          </span>
+          <div>
+            <button type="submit" id="calcButton">Calculate</button>
+          </div>
+        </form>
+      </div>
+      <div class="column" id="two">
+        <h1>Result</h1>
+        <p id="result"></p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
